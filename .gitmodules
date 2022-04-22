@@ -1,0 +1,3 @@
+[submodule "mcpnet"]
+	path = mcpnet
+	url = https://github.com/AluruLab/MCPNet.git
