@@ -1,0 +1,100 @@
+#!/bin/bash
+#PBS -N time_arab_mcpnet
+#PBS -l nodes=8:ppn=24
+#PBS -l pmem=6gb
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -m abe
+
+
+#### each task is 1 mpi process.
+#### for MPI, ntasks is total MPI procs, 1 mpi per core, x per socket
+#### for OMP, ntasks is 1, cpus-per-task = num threads, and set OMP_NUM_THREADS.
+#### for this, it's a mix, so try ntasks = 2, cpu-bind=socket, cpus-per-task=16, ntasks-per-socket=1, OMP_NUM_THREADS=12
+
+module load gcc mvapich2 hdf5
+
+############# CHANGE ME ###########
+bindir=~/build/mcpnet/bin
+srcdir=~/src/mcpnet
+datadir_base=~/data/athaliana
+logfile=arabidopsis.log
+combos=${srcdir}/data/combos.csv
+truth=${datadir_base}/athaliana_gs_probes.tsv
+out_base=~/output/mcpnet/athaliana
+###############
+
+ulimit -c 0
+
+printenv
+cat $PBS_NODEFILE
+
+date
+pwd
+
+# make a better nodefile
+sort -u $PBS_NODEFILE > ${PBS_JOBID}.txt
+sed -e 's/$/:2/' -i ${PBS_JOBID}.txt
+nodes=$( wc -l < ${PBS_JOBID}.txt )
+procs=$(( 2 * nodes ))
+
+export OMP_NUM_THREADS=12
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+#qexport GOMP_CPU_AFFINITY
+# export KMP_AFFINITY=warnings,compact
+# mvapich2 environment variables as described in mv2 2.3 user guide, section 6.20.  all 5 should be set according to reference in later part of doc.
+# http://mvapich.cse.ohio-state.edu/static/media/mvapich/mvapich2-2.3-userguide.pdf
+export MV2_SHOW_CPU_BINDING=1
+export MV2_ENABLE_AFFINITY=1
+export MV2_CPU_BINDING_POLICY=hybrid
+export MV2_CPU_BINDING_LEVEL=socket
+export MV2_THREADS_PER_PROCESS=$OMP_NUM_THREADS
+export MV2_HYBRID_BINDING_POLICY=spread
+
+# PBS_TASKNUM seems to always be 1...
+
+echo "new node file"
+cat ${PBS_JOBID}.txt
+
+files="development.exp flower.exp leaf.exp seed.exp seedling1wk.exp hormone-aba-iaa-ga-br.exp hormone-ja-sa-ethylene.exp"
+
+mi=1
+
+for iter in 1 # 2 3
+do
+
+outputdir=${out_base}/arab_time_${procs}_${iter}
+mkdir -p $outputdir
+
+
+for input_file in $files
+do
+        datafile=${datadir}/$input_file
+
+        ngenes=$(tail -n +2 $datafile | wc -l)
+        nexpts=$(head -n 1 $datafile | wc -w)
+        ((nexpts--))
+        echo "Processing $datafile. Number of genes=$ngenes, Number of expts=$nexpts"
+
+        prefix="${input_file%.*}"
+
+        echo COMPUTE MCP
+        date
+
+        # COMPUTE CORRELATION and PVALUE
+        corrfile=${outputdir}/${prefix}
+        #pvfile=${outputdir}/${prefix}.mi_pv.csv
+        # process if output exists
+#        if [[ ! -e ${corrfile}.mi.h5 ]]
+#        then
+                # compute correlation and pvalue
+                /usr/bin/time -v mpiexec -f ${PBS_JOBID}.txt -np $procs --map-by socket --bind-to socket ${bindir}/mcpnet --skip -i $datafile -o $corrfile -f $combos -m 1 2 3 4 -t $OMP_NUM_THREADS -g $truth --mi-method ${mi}
+		echo "COMPUTED MI, MCP2, MCP3, MCP4, and Ensemble MCP"
+#        fi
+       echo DONE
+       date
+done
+
+done
+
