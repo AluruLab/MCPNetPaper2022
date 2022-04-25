@@ -1,0 +1,91 @@
+{
+  "DATA_DIR": "..",
+  "TRUE_NET_23": "datasets/yeast/yeast_gs_all23_list_filtered.tsv",
+  "TRUE_NET_13": "datasets/yeast/yeast_gs_all13_list_filtered.tsv",
+  "TRUE_NET": "datasets/yeast/yeast_gs_combo2.tsv",
+  "OUT_FORMAT" : ".png",
+  "OUT_FILE" : "yeast_infergs_aupr.csv",
+  "ROCPR_OUTPUT_FILE": "Yeast-InferGS-ROC-PR",
+  "PR_OUTPUT_FILE": "Yeast-InferGS-PR",
+  "ROC_OUTPUT_FILE": "Yeast-InferGS-ROC",
+  "FIG_SIZE": "(8, 6)",
+  "SUB_FIG_SIZE":  "(15, 6)",
+  "CN_COLORS": ["C0", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"],
+  "TAB_COLORS": [
+    "tab:blue", "tab:orange", "tab:green", "tab:red", "tab:purple",
+    "tab:brown", "tab:pink", "tab:gray", "tab:olive", "tab:cyan"
+    ],
+  "PLOT_COLOR_NAMES":[
+    "Maroon",
+    "Brown",
+    "Orange",
+    "Green",
+    "Purple",
+    "Navy",
+    "Olive",
+    "Blue",
+    "Red",
+    "Yellow",
+    "Grey"
+    ],
+  "PLOT_COLORS" : [
+    "#800000", 
+    "#9A6324",
+    "#f58231",
+    "#3cb44b",
+    "#911eb4",
+    "#000075",
+    "#808000",
+    "#4363d8",
+    "#e6194B",
+    "#ffe119",
+    "#a9a9a9"
+   ],
+  "REVNET_FILES": [
+      {
+          "file"  : "output/wgcna/yeast/5716.2577-2021.09.02-13.30.00/output.mat",
+          "label" : "WGCNA",
+          "method" : "wgcna"
+      },
+      {
+        "file"   : "output/aracne/yeast_eval/nobootstrap_network.txt",
+        "label"  : "ARACNE-AP",
+        "method" : "aracne"
+      },
+      {
+        "file"   : "output/aracne_full/yeast/network.txt",
+        "label"  : "ARACNE-AP-FULL",
+        "method" : "aracne"
+      },
+      { 
+        "file"     : "output/clr/yeast_eval/output.tsv",
+        "label"    : "CLR",
+        "method"   : "clr"
+      },
+      {
+          "file"   : "output/arboreto/yeast_eval/network.tsv",
+          "label"  : "Arborerto",
+          "method" : "arboreto"
+      },
+      {
+          "file"   : "output/tinge/yeast_eval/network.tsv",
+          "label"  : "TINGE",
+          "method" : "tinge"
+      },
+      {
+          "file"   : "output/tinge_full/yeast/yeast-network.tsv",
+          "label"  : "TINGE-FULL",
+          "method" : "tinge"
+      },
+      {
+          "file"   : "output/inferelator/yeast_eval/network.tsv",
+          "label"  : "Inferelator",
+          "method" : "inferelator"
+      },
+      {
+          "file"   : "output/mrnet/yeast_eval/network.mat",
+          "label"  : "MRNET",
+          "method" : "mrnet"
+      }
+  ]
+}
