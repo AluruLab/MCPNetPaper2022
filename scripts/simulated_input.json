@@ -1,0 +1,1691 @@
+{
+  "DATA_DIR": "../output/",
+  "TRUE_NET": "../datasets/gnw/gnw2000.net",
+  "AUPR_OUT_FILE":"pr.full.2kx.csv",
+  "AUROC_OUT_FILE":"roc.full.2kx.csv",
+  "ROCPR_OUTPUT_FILE": "Simulations-ROC-PR-2Kx2K",
+  "PR_OUTPUT_FILE": "Simulations-PR-2Kx2K",
+  "ROC_OUTPUT_FILE": "Simulations-ROC-2Kx2K",
+  "FIG_SIZE": "(8, 6)",
+  "SUB_FIG_SIZE":  "(15, 6)",
+  "CN_COLORS": ["C0", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9"],
+  "TAB_COLORS": [
+    "tab:blue", "tab:orange", "tab:green", "tab:red", "tab:purple",
+    "tab:brown", "tab:pink", "tab:gray", "tab:olive", "tab:cyan"
+    ],
+  "PLOT_COLOR_NAMES":[
+    "Maroon",
+    "Brown",
+    "Orange",
+    "Green",
+    "Purple",
+    "Navy",
+    "Olive",
+    "Blue",
+    "Red",
+    "Yellow",
+    "Grey"
+    ],
+  "PLOT_COLORS" : [
+    "#800000", 
+    "#9A6324",
+    "#f58231",
+    "#3cb44b",
+    "#911eb4",
+    "#000075",
+    "#808000",
+    "#4363d8",
+    "#e6194B",
+    "#ffe119",
+    "#a9a9a9"
+   ],
+  "REVNET_FILES": [
+    {
+       "file": "aracne_full/gnw/gnw2000/network.txt",
+      "label" : "ARACNE-FULL-1",
+      "method" : "aracne"
+    },
+    {
+      "file" : "tinge_full/gnw/gnw2000/tinge-network.weight.eda",
+      "label" : "TINGe-FULL-1",
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "inferelator/simulated/final/network.tsv", 
+      "label"  : "Inferelator-1", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000/network.tsv", 
+      "label"  : "Arboreto-1", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000/network_mi.mat", 
+      "label"  : "MRNET-MI", 
+      "method" : "mrnet"
+    },
+    {
+       "file": "aracne/gnw/gnw2000/nobootstrap_network.txt",
+      "label" : "ARACNE-1",
+      "method" : "aracne"
+    },
+    {
+      "file" : "tinge/gnw/gnw2000/tinge-network.weight.eda",
+      "label" : "TINGe-1",
+      "method" : "tinge"
+    }
+   ],
+  "REVNET_FILES_1": [
+    { 
+      "file"   : "inferelator/simulated/final/network.tsv", 
+      "label"  : "Inferelator-1", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000/network.tsv", 
+      "label"  : "Arboreto-1", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000/network.mat", 
+      "label"  : "MRNET-1", 
+      "method" : "mrnet"
+    },
+    {
+       "file": "aracne/gnw/gnw2000/nobootstrap_network.txt",
+      "label" : "ARACNE-1",
+      "method" : "aracne"
+    },
+    {
+       "file": "aracne_full/gnw/gnw2000/network.txt",
+      "label" : "ARACNE-FULL-1",
+      "method" : "aracne"
+    },
+    {
+      "file" : "tinge/gnw/gnw2000/tinge-network.weight.eda",
+      "label" : "TINGe-1",
+      "method" : "tinge"
+    },
+    {
+      "file" : "tinge_full/gnw/gnw2000/tinge-network.weight.eda",
+      "label" : "TINGe-FULL-1",
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x1/network.mat", 
+      "label"  : "MRNET-1", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x2/network.mat", 
+      "label"  : "MRNET-2", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x3/network.mat", 
+      "label"  : "MRNET-3", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x4/network.mat", 
+      "label"  : "MRNET-4", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x5/network.mat", 
+      "label"  : "MRNET-5", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x6/network.mat", 
+      "label"  : "MRNET-6", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x7/network.mat", 
+      "label"  : "MRNET-7", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x8/network.mat", 
+      "label"  : "MRNET-8", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.25_g0.0_x9/network.mat", 
+      "label"  : "MRNET-9", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x1/network.mat", 
+      "label"  : "MRNET-10", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x2/network.mat", 
+      "label"  : "MRNET-11", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x3/network.mat", 
+      "label"  : "MRNET-12", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x4/network.mat", 
+      "label"  : "MRNET-13", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x5/network.mat", 
+      "label"  : "MRNET-14", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x6/network.mat", 
+      "label"  : "MRNET-15", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x7/network.mat", 
+      "label"  : "MRNET-16", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x8/network.mat", 
+      "label"  : "MRNET-17", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.2_g0.1_x9/network.mat", 
+      "label"  : "MRNET-18", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x1/network.mat", 
+      "label"  : "MRNET-19", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x2/network.mat", 
+      "label"  : "MRNET-20", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x3/network.mat", 
+      "label"  : "MRNET-21", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x4/network.mat", 
+      "label"  : "MRNET-22", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x5/network.mat", 
+      "label"  : "MRNET-23", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x6/network.mat", 
+      "label"  : "MRNET-24", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x7/network.mat", 
+      "label"  : "MRNET-25", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x8/network.mat", 
+      "label"  : "MRNET-26", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.5_g0.0_x9/network.mat", 
+      "label"  : "MRNET-27", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x1/network.mat", 
+      "label"  : "MRNET-28", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x2/network.mat", 
+      "label"  : "MRNET-29", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x3/network.mat", 
+      "label"  : "MRNET-30", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x4/network.mat", 
+      "label"  : "MRNET-31", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x5/network.mat", 
+      "label"  : "MRNET-32", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x6/network.mat", 
+      "label"  : "MRNET-33", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x7/network.mat", 
+      "label"  : "MRNET-34", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x8/network.mat", 
+      "label"  : "MRNET-35", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l0.75_g0.0_x9/network.mat", 
+      "label"  : "MRNET-36", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x1/network.mat", 
+      "label"  : "MRNET-37", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x2/network.mat", 
+      "label"  : "MRNET-38", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x3/network.mat", 
+      "label"  : "MRNET-39", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x4/network.mat", 
+      "label"  : "MRNET-40", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x5/network.mat", 
+      "label"  : "MRNET-41", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x6/network.mat", 
+      "label"  : "MRNET-42", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x7/network.mat", 
+      "label"  : "MRNET-43", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x8/network.mat", 
+      "label"  : "MRNET-44", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "mrnet/gnw/gnw2000_l1.0_g0.0_x9/network.mat", 
+      "label"  : "MRNET-45", 
+      "method" : "mrnet"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x1/network.tsv", 
+      "label"  : "Arboreto-1", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x2/network.tsv", 
+      "label"  : "Arboreto-2", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x3/network.tsv", 
+      "label"  : "Arboreto-3", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x4/network.tsv", 
+      "label"  : "Arboreto-4", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x5/network.tsv", 
+      "label"  : "Arboreto-5", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x6/network.tsv", 
+      "label"  : "Arboreto-6", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x7/network.tsv", 
+      "label"  : "Arboreto-7", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x8/network.tsv", 
+      "label"  : "Arboreto-8", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.25_g0.0_x9/network.tsv", 
+      "label"  : "Arboreto-9", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x1/network.tsv", 
+      "label"  : "Arboreto-10", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x2/network.tsv", 
+      "label"  : "Arboreto-11", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x3/network.tsv", 
+      "label"  : "Arboreto-12", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x4/network.tsv", 
+      "label"  : "Arboreto-13", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x5/network.tsv", 
+      "label"  : "Arboreto-14", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x6/network.tsv", 
+      "label"  : "Arboreto-15", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x7/network.tsv", 
+      "label"  : "Arboreto-16", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x8/network.tsv", 
+      "label"  : "Arboreto-17", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.2_g0.1_x9/network.tsv", 
+      "label"  : "Arboreto-18", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x1/network.tsv", 
+      "label"  : "Arboreto-19", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x2/network.tsv", 
+      "label"  : "Arboreto-20", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x3/network.tsv", 
+      "label"  : "Arboreto-21", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x4/network.tsv", 
+      "label"  : "Arboreto-22", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x5/network.tsv", 
+      "label"  : "Arboreto-23", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x6/network.tsv", 
+      "label"  : "Arboreto-24", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x7/network.tsv", 
+      "label"  : "Arboreto-25", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x8/network.tsv", 
+      "label"  : "Arboreto-26", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.5_g0.0_x9/network.tsv", 
+      "label"  : "Arboreto-27", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x1/network.tsv", 
+      "label"  : "Arboreto-28", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x2/network.tsv", 
+      "label"  : "Arboreto-29", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x3/network.tsv", 
+      "label"  : "Arboreto-30", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x4/network.tsv", 
+      "label"  : "Arboreto-31", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x5/network.tsv", 
+      "label"  : "Arboreto-32", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x6/network.tsv", 
+      "label"  : "Arboreto-33", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x7/network.tsv", 
+      "label"  : "Arboreto-34", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x8/network.tsv", 
+      "label"  : "Arboreto-35", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l0.75_g0.0_x9/network.tsv", 
+      "label"  : "Arboreto-36", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x1/network.tsv", 
+      "label"  : "Arboreto-37", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x2/network.tsv", 
+      "label"  : "Arboreto-38", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x3/network.tsv", 
+      "label"  : "Arboreto-39", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x4/network.tsv", 
+      "label"  : "Arboreto-40", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x5/network.tsv", 
+      "label"  : "Arboreto-41", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x6/network.tsv", 
+      "label"  : "Arboreto-42", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x7/network.tsv", 
+      "label"  : "Arboreto-43", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x8/network.tsv", 
+      "label"  : "Arboreto-44", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "arboreto/gnw/gnw2000_l1.0_g0.0_x9/network.tsv", 
+      "label"  : "Arboreto-45", 
+      "method" : "arboreto"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-1", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-2", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-3", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-4", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-5", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-6", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-7", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-8", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.25_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-9", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-10", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-11", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-12", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-13", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-14", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-15", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-16", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-17", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.2_g0.1_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-18", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-19", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-20", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-21", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-22", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-23", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-24", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-25", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-26", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.5_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-27", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-28", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-29", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-30", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-31", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-32", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-33", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-34", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-35", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l0.75_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-36", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-37", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-38", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-39", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-40", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-41", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-42", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-43", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-44", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge/gnw/gnw2000_l1.0_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-45", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-1", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-2", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-3", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-4", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-5", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-6", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-7", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-8", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.25_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-9", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-10", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-11", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-12", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-13", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-14", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-15", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-16", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-17", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.2_g0.1_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-18", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-19", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-20", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-21", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-22", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-23", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-24", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-25", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-26", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.5_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-27", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-28", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-29", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-30", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-31", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-32", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-33", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-34", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-35", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l0.75_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-36", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x1/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-37", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x2/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-38", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x3/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-39", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x4/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-40", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x5/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-41", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x6/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-42", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x7/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-43", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x8/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-44", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "tinge_full/gnw/gnw2000_l1.0_g0.0_x9/tinge-network.weight.eda", 
+      "label"  : "TINGe-FULL-45", 
+      "method" : "tinge"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x1/nobootstrap_network.txt", 
+      "label"  : "ARACNE-1", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x2/nobootstrap_network.txt", 
+      "label"  : "ARACNE-2", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x3/nobootstrap_network.txt", 
+      "label"  : "ARACNE-3", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x4/nobootstrap_network.txt", 
+      "label"  : "ARACNE-4", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x5/nobootstrap_network.txt", 
+      "label"  : "ARACNE-5", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x6/nobootstrap_network.txt", 
+      "label"  : "ARACNE-6", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x7/nobootstrap_network.txt", 
+      "label"  : "ARACNE-7", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x8/nobootstrap_network.txt", 
+      "label"  : "ARACNE-8", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.25_g0.0_x9/nobootstrap_network.txt", 
+      "label"  : "ARACNE-9", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x1/nobootstrap_network.txt", 
+      "label"  : "ARACNE-10", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x2/nobootstrap_network.txt", 
+      "label"  : "ARACNE-11", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x3/nobootstrap_network.txt", 
+      "label"  : "ARACNE-12", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x4/nobootstrap_network.txt", 
+      "label"  : "ARACNE-13", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x5/nobootstrap_network.txt", 
+      "label"  : "ARACNE-14", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x6/nobootstrap_network.txt", 
+      "label"  : "ARACNE-15", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x7/nobootstrap_network.txt", 
+      "label"  : "ARACNE-16", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x8/nobootstrap_network.txt", 
+      "label"  : "ARACNE-17", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.2_g0.1_x9/nobootstrap_network.txt", 
+      "label"  : "ARACNE-18", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x1/nobootstrap_network.txt", 
+      "label"  : "ARACNE-19", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x2/nobootstrap_network.txt", 
+      "label"  : "ARACNE-20", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x3/nobootstrap_network.txt", 
+      "label"  : "ARACNE-21", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x4/nobootstrap_network.txt", 
+      "label"  : "ARACNE-22", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x5/nobootstrap_network.txt", 
+      "label"  : "ARACNE-23", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x6/nobootstrap_network.txt", 
+      "label"  : "ARACNE-24", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x7/nobootstrap_network.txt", 
+      "label"  : "ARACNE-25", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x8/nobootstrap_network.txt", 
+      "label"  : "ARACNE-26", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.5_g0.0_x9/nobootstrap_network.txt", 
+      "label"  : "ARACNE-27", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x1/nobootstrap_network.txt", 
+      "label"  : "ARACNE-28", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x2/nobootstrap_network.txt", 
+      "label"  : "ARACNE-29", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x3/nobootstrap_network.txt", 
+      "label"  : "ARACNE-30", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x4/nobootstrap_network.txt", 
+      "label"  : "ARACNE-31", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x5/nobootstrap_network.txt", 
+      "label"  : "ARACNE-32", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x6/nobootstrap_network.txt", 
+      "label"  : "ARACNE-33", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x7/nobootstrap_network.txt", 
+      "label"  : "ARACNE-34", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x8/nobootstrap_network.txt", 
+      "label"  : "ARACNE-35", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l0.75_g0.0_x9/nobootstrap_network.txt", 
+      "label"  : "ARACNE-36", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x1/nobootstrap_network.txt", 
+      "label"  : "ARACNE-37", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x2/nobootstrap_network.txt", 
+      "label"  : "ARACNE-38", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x3/nobootstrap_network.txt", 
+      "label"  : "ARACNE-39", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x4/nobootstrap_network.txt", 
+      "label"  : "ARACNE-40", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x5/nobootstrap_network.txt", 
+      "label"  : "ARACNE-41", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x6/nobootstrap_network.txt", 
+      "label"  : "ARACNE-42", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x7/nobootstrap_network.txt", 
+      "label"  : "ARACNE-43", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x8/nobootstrap_network.txt", 
+      "label"  : "ARACNE-44", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne/gnw/gnw2000_l1.0_g0.0_x9/nobootstrap_network.txt", 
+      "label"  : "ARACNE-45", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x1/network.txt", 
+      "label"  : "ARACNE-FULL-1", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x2/network.txt", 
+      "label"  : "ARACNE-FULL-2", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x3/network.txt", 
+      "label"  : "ARACNE-FULL-3", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x4/network.txt", 
+      "label"  : "ARACNE-FULL-4", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x5/network.txt", 
+      "label"  : "ARACNE-FULL-5", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x6/network.txt", 
+      "label"  : "ARACNE-FULL-6", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x7/network.txt", 
+      "label"  : "ARACNE-FULL-7", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x8/network.txt", 
+      "label"  : "ARACNE-FULL-8", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.25_g0.0_x9/network.txt", 
+      "label"  : "ARACNE-FULL-9", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x1/network.txt", 
+      "label"  : "ARACNE-FULL-10", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x2/network.txt", 
+      "label"  : "ARACNE-FULL-11", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x3/network.txt", 
+      "label"  : "ARACNE-FULL-12", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x4/network.txt", 
+      "label"  : "ARACNE-FULL-13", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x5/network.txt", 
+      "label"  : "ARACNE-FULL-14", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x6/network.txt", 
+      "label"  : "ARACNE-FULL-15", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x7/network.txt", 
+      "label"  : "ARACNE-FULL-16", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x8/network.txt", 
+      "label"  : "ARACNE-FULL-17", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.2_g0.1_x9/network.txt", 
+      "label"  : "ARACNE-FULL-18", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x1/network.txt", 
+      "label"  : "ARACNE-FULL-19", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x2/network.txt", 
+      "label"  : "ARACNE-FULL-20", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x3/network.txt", 
+      "label"  : "ARACNE-FULL-21", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x4/network.txt", 
+      "label"  : "ARACNE-FULL-22", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x5/network.txt", 
+      "label"  : "ARACNE-FULL-23", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x6/network.txt", 
+      "label"  : "ARACNE-FULL-24", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x7/network.txt", 
+      "label"  : "ARACNE-FULL-25", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x8/network.txt", 
+      "label"  : "ARACNE-FULL-26", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.5_g0.0_x9/network.txt", 
+      "label"  : "ARACNE-FULL-27", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x1/network.txt", 
+      "label"  : "ARACNE-FULL-28", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x2/network.txt", 
+      "label"  : "ARACNE-FULL-29", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x3/network.txt", 
+      "label"  : "ARACNE-FULL-30", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x4/network.txt", 
+      "label"  : "ARACNE-FULL-31", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x5/network.txt", 
+      "label"  : "ARACNE-FULL-32", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x6/network.txt", 
+      "label"  : "ARACNE-FULL-33", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x7/network.txt", 
+      "label"  : "ARACNE-FULL-34", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x8/network.txt", 
+      "label"  : "ARACNE-FULL-35", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l0.75_g0.0_x9/network.txt", 
+      "label"  : "ARACNE-FULL-36", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x1/network.txt", 
+      "label"  : "ARACNE-FULL-37", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x2/network.txt", 
+      "label"  : "ARACNE-FULL-38", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x3/network.txt", 
+      "label"  : "ARACNE-FULL-39", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x4/network.txt", 
+      "label"  : "ARACNE-FULL-40", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x5/network.txt", 
+      "label"  : "ARACNE-FULL-41", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x6/network.txt", 
+      "label"  : "ARACNE-FULL-42", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x7/network.txt", 
+      "label"  : "ARACNE-FULL-43", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x8/network.txt", 
+      "label"  : "ARACNE-FULL-44", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "aracne_full/gnw/gnw2000_l1.0_g0.0_x9/network.txt", 
+      "label"  : "ARACNE-FULL-45", 
+      "method" : "aracne"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x1/final/network.tsv", 
+      "label"  : "Inferelator-1", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x2/final/network.tsv", 
+      "label"  : "Inferelator-2", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x3/final/network.tsv", 
+      "label"  : "Inferelator-3", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x4/final/network.tsv", 
+      "label"  : "Inferelator-4", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x5/final/network.tsv", 
+      "label"  : "Inferelator-5", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x6/final/network.tsv", 
+      "label"  : "Inferelator-6", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x7/final/network.tsv", 
+      "label"  : "Inferelator-7", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x8/final/network.tsv", 
+      "label"  : "Inferelator-8", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.25_g0.0_x9/final/network.tsv", 
+      "label"  : "Inferelator-9", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x1/final/network.tsv", 
+      "label"  : "Inferelator-10", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x2/final/network.tsv", 
+      "label"  : "Inferelator-11", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x3/final/network.tsv", 
+      "label"  : "Inferelator-12", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x4/final/network.tsv", 
+      "label"  : "Inferelator-13", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x5/final/network.tsv", 
+      "label"  : "Inferelator-14", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x6/final/network.tsv", 
+      "label"  : "Inferelator-15", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x7/final/network.tsv", 
+      "label"  : "Inferelator-16", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x8/final/network.tsv", 
+      "label"  : "Inferelator-17", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.2_g0.1_x9/final/network.tsv", 
+      "label"  : "Inferelator-18", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x1/final/network.tsv", 
+      "label"  : "Inferelator-19", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x2/final/network.tsv", 
+      "label"  : "Inferelator-20", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x3/final/network.tsv", 
+      "label"  : "Inferelator-21", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x4/final/network.tsv", 
+      "label"  : "Inferelator-22", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x5/final/network.tsv", 
+      "label"  : "Inferelator-23", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x6/final/network.tsv", 
+      "label"  : "Inferelator-24", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x7/final/network.tsv", 
+      "label"  : "Inferelator-25", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x8/final/network.tsv", 
+      "label"  : "Inferelator-26", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.5_g0.0_x9/final/network.tsv", 
+      "label"  : "Inferelator-27", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x1/final/network.tsv", 
+      "label"  : "Inferelator-28", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x2/final/network.tsv", 
+      "label"  : "Inferelator-29", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x3/final/network.tsv", 
+      "label"  : "Inferelator-30", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x4/final/network.tsv", 
+      "label"  : "Inferelator-31", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x5/final/network.tsv", 
+      "label"  : "Inferelator-32", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x6/final/network.tsv", 
+      "label"  : "Inferelator-33", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x7/final/network.tsv", 
+      "label"  : "Inferelator-34", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x8/final/network.tsv", 
+      "label"  : "Inferelator-35", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l0.75_g0.0_x9/final/network.tsv", 
+      "label"  : "Inferelator-36", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x1/final/network.tsv", 
+      "label"  : "Inferelator-37", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x2/final/network.tsv", 
+      "label"  : "Inferelator-38", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x3/final/network.tsv", 
+      "label"  : "Inferelator-39", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x4/final/network.tsv", 
+      "label"  : "Inferelator-40", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x5/final/network.tsv", 
+      "label"  : "Inferelator-41", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x6/final/network.tsv", 
+      "label"  : "Inferelator-42", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x7/final/network.tsv", 
+      "label"  : "Inferelator-43", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x8/final/network.tsv", 
+      "label"  : "Inferelator-44", 
+      "method" : "inferlator"
+    },
+    { 
+      "file"   : "inferelator/gnw/gnw2000_l1.0_g0.0_x9/final/network.tsv", 
+      "label"  : "Inferelator-45", 
+      "method" : "inferlator"
+    }
+  ]
+}
