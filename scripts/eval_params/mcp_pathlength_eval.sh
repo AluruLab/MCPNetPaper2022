@@ -8,7 +8,7 @@ datadir=~/src/mcpnet/data
 # path to dataset
 DS=gnw2000
 
-for m in 1 2  # MI methods
+for m in 0 1  # MI methods
 do
 
     ${bindir}/bin/mi -i ${datadir}/${DS}.exp -o ${datadir}/${DS}.mi${m}.h5 -m ${m} -t 4
